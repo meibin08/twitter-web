@@ -1,0 +1,54 @@
+@import 'src/style/index';
+
+$prefixCls: 'detail-page';
+.#{$prefixCls} {
+  &__cover {
+    height: 336px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    img {
+      opacity: 0;
+    }
+  }
+  &__content {
+    padding: 12px 16px;
+    .detail {
+      color: rgb(15, 20, 25);
+      line-height: 29px;
+      font-size: 20px;
+    }
+    .intro {
+      margin-top: 15px;
+      line-height: 22px;
+      font-size: var(--font-size-base);
+    }
+  }
+  &__base {
+    padding: 0 0 10px;
+    font-size: 15px;
+    .name {
+      color: #536471;
+    }
+  }
+  &__comment {
+    border-top: 1px solid var(--primary-bd-color);
+    border-bottom: 1px solid var(--primary-bd-color);
+    padding: 12px 16px;
+    .input {
+      padding: 0 15px;
+      position: relative;
+      input {
+        border-radius: 50px;
+      }
+      &::after {
+        content: '';
+        @include absolute-foursides(absolute);
+        z-index: 11;
+        cursor: pointer;
+      }
+    }
+  }
+}

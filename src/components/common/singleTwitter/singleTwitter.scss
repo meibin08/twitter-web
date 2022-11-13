@@ -1,0 +1,59 @@
+@import 'src/style/index';
+
+$prefixCls: 'singlett-component';
+.#{$prefixCls} {
+  border-bottom: 1px solid var(--primary-bd-color);
+  padding: 12px 16px;
+  @extend %hover__bg;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  .user-name {
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+  .date {
+    font-size: var(--font-size-sm);
+    color: var(--text-color-secondary);
+    display: inline-block;
+    margin-left: 8px;
+  }
+  .col-flex {
+    @include flex;
+  }
+  .operate {
+    text-align: right;
+  }
+  .twitter-content {
+    line-height: 24px;
+  }
+  .twitter-handle {
+    .ant-col {
+      padding: 14px 8px 2px;
+      cursor: pointer;
+      @include display-flex;
+      @include align-content(center);
+      @include align-items(center);
+      .anticon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        margin-right: 10px;
+        font-size: var(--font-size-xlg);
+        @include display-flex;
+        @include align-items(center);
+        @include align-content(center);
+        @include justify-content(center);
+      }
+      &:hover {
+        color: var(--primary-color);
+        .anticon {
+          background-color: var(--ant-primary-1);
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}

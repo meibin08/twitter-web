@@ -1,0 +1,26 @@
+@import 'src/style/index';
+
+$prefixCls: 'send-component';
+.#{$prefixCls} {
+  padding: 12px 16px;
+  .textarea {
+    border: 0;
+    font-size: var(--font-size-base);
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+  }
+  .handler {
+    padding: 12px 0 0;
+    border-top: 1px solid var(--primary-bd-color);
+  }
+}
+.sidebar-component {
+  .trigger-btn.ant-btn {
+    width: 215px;
+    height: 52px;
+    font-weight: 600;
+    font-size: var(--font-size-xlg);
+  }
+}

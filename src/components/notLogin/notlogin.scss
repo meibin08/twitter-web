@@ -1,0 +1,70 @@
+@import 'src/style/index';
+
+$prefixCls: 'notlogin-component';
+.#{$prefixCls} {
+
+  &__body {
+    padding: 0 16px;
+    border: 1px solid var(--primary-bd-color);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    .login-title {
+      padding: 12px 0;
+      font-size: var(--font-size-xxlg);
+      font-weight: 800;
+    }
+    .login-btn {
+      margin-top: 15px;
+    }
+    .agreement-tips {
+      padding: 15px 0;
+    }
+  }
+  &__terms {
+    a {
+      margin: 3px 0;
+      margin-right: 10px;
+      color: var(--text-color-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 16px;
+      display: inline-block;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__footer {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    box-shadow: rgb(101 119 134 / 25%) 0px 0px 15px, rgb(101 119 134 / 18%) 0px 0px 3px 1px;
+    padding: 12px 0;
+    .main-heart {
+      width: 960px;
+      margin: 0 auto;
+      transform: translateX(130px);
+      .login-btn {
+        & + .login-btn {
+          margin-left: 15px;
+        }
+      }
+      .slogan {
+        color: #fff;
+        h3 {
+          font-weight: 600;
+          font-size: 23px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.login-tips {
+  padding: 10px 0;
+  font-size: var(--font-size-ssm);
+  color: #999;
+  text-align: center;
+}

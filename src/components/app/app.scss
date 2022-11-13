@@ -1,0 +1,16 @@
+@import 'src/style/index';
+
+#root {
+  width: 1240px;
+  margin: 0 auto;
+  .app-container {
+    @include display-flex;
+  }
+  .app-main {
+    @include flex;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: var(--primary-bd-color);
+    min-height: 95vh;
+  }
+}

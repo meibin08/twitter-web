@@ -1,0 +1,27 @@
+@import 'src/style/index';
+
+$prefixCls: 'headerbar-component';
+.#{$prefixCls} {
+  position: sticky;
+  z-index: 9;
+  top: -0.1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(14px);
+  padding: 0 16px;
+  height: 52px;
+  .return {
+    font-size: var(--font-size-xlg);
+    font-weight: 600;
+    padding-left: 5px;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: var(--font-size-xlg);
+    font-weight: 600;
+    padding-right: 10px;
+    @include line;
+    &:not(.align) {
+      text-align: center;
+    }
+  }
+}

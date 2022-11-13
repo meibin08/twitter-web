@@ -1,0 +1,58 @@
+@import 'src/style/index';
+
+$prefixCls: 'explore-layout';
+.#{$prefixCls} {
+  &__hd {
+    position: sticky;
+    z-index: 9;
+    top: -0.1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(14px);
+  }
+  &__bar {
+    padding: 8px 20px;
+    &-search {
+      height: 40px;
+      line-height: 40px;
+      border-radius: 80px;
+      background-color: rgba(239, 243, 244,.9);
+      font-size: var(--font-size-base);
+      .ant-input {
+        background-color: transparent;
+      }
+      .anticon {
+        font-size: 18px;
+      }
+    }
+  }
+  &__nav {
+    @include display-flex;
+    a {
+      @include flex;
+      padding: 0 16px;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 2px;
+      color: var(--text-color-secondary);
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      &:hover {
+        background-color: rgba(15, 20, 25, 0.1);
+      }
+      &.active {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 1px;
+          transform: translateX(-50%);
+          border-radius: 10px;
+          height: 4px;
+          width: 60px;
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@mixin defineColorHSL($color, $hue, $saturation, $lightness, $alpha: 1) {
+  #{$color}: unquote('hsla(#{$hue}, #{$saturation}, #{$lightness}, #{$alpha})');
+  #{$color}-h: #{$hue};
+  #{$color}-s: #{$saturation};
+  #{$color}-l: #{$lightness};
+  #{$color}-a: #{$alpha};
+}
+$browser-default-font-size: 14;
+$browser-default-font-size-px: 14px !default;
+$window-color: #ccc;
+:root {
+  @include defineColorHSL(--primary-color, 204, 88%, 53%);
+  //字体
+  --font-size-ssm: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 15px;
+  --font-size-lg: 16px;
+  --font-size-xlg: 18px;
+  --font-size-xxlg: 20px;
+  --font-size-sub: 26px;
+  --primary-bd-color: rgb(239, 243, 244);
+  --item-hover-bg: #f5f5f5; // 下拉hover选项背景等色
+  --text-color: rgb(15 20 25 / 1); // 主文本色
+  --text-color-secondary: #536471; // 次文本色
+}

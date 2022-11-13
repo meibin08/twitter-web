@@ -1,0 +1,14 @@
+@import 'src/style/index';
+
+$prefixCls: 'home-page';
+.#{$prefixCls} {
+  &__body {
+    border-top: 1px solid var(--primary-bd-color);
+    padding-bottom: 12px;
+  }
+  &__loadingbar {
+    padding: 12px 0 20px;
+    text-align: center;
+    color: #d5d5d5;
+  }
+}

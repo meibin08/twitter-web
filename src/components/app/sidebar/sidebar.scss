@@ -1,0 +1,64 @@
+@import 'src/style/index';
+
+$prefixCls: 'sidebar-component';
+.#{$prefixCls} {
+  width: 270px;
+  background-color: #fff;
+  padding: 0 12px;
+  &__logo {
+    padding: 2px 0 6px;
+    a {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      transition: all 0.3s;
+      position: relative;
+      @extend %typography__vh;
+      &:after {
+        content: '';
+        @include absolute-foursides;
+        border-radius: 50%;
+        opacity: 0.1;
+      }
+      &:hover {
+        &:after {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+    .logo-icon {
+      height: 30px;
+      width: 50px;
+    }
+  }
+  &__menus {
+    padding-bottom: 16px;
+    &-row {
+      padding: 4px 0;
+      display: block;
+      color: var(--text-color);
+      &:hover {
+        color: var(--text-color);
+        .submenu {
+          background-color: rgba(15, 20, 25, 0.1);
+        }
+      }
+      &.active {
+        color: var(--primary-color);
+      }
+    }
+    .submenu {
+      display: inline-block;
+      transition: all 0.2s;
+      line-height: 24px;
+      padding: 12px 28px 12px 12px;
+      border-radius: 99px;
+      font-size: var(--font-size-xxlg);
+    }
+    .menu-icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 18px;
+    }
+  }
+}

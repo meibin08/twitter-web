@@ -1,0 +1,24 @@
+@import 'src/style/index';
+
+$prefixCls: 'newbase-component';
+.#{$prefixCls} {
+  @include display-flex;
+  @include align-items(center);
+  word-wrap: break-word;
+  .avatar-icon {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .nbsp {
+    padding: 0 5px;
+  }
+  .name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
