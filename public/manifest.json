@@ -1,6 +1,6 @@
 {
   "short_name": "Twitter App",
-  "name": "聚焦当下,了解最新即时新闻、政治、流行音乐、时事、赛事比分以及最新的全球新闻资讯 — 所有这些都只会消耗较少的数据流量",
+  "name": "聚焦当下/ Twitter",
   "icons": [
     {
       "src": "https://abs.twimg.com/responsive-web/client-web/icon-default.ee534d89.png",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default.ee534d89.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default.ee534d89.png",
       "type": "image/png",
       "sizes": "512x512"
     }

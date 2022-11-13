@@ -18,6 +18,7 @@
 
 - dev localhost:3000/
 - prod localhost:9000/
+- 在线地址：https://fake-twitter.vercel.app/
 
 ## 可操作页面/功能
 
