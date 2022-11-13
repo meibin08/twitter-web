@@ -56,7 +56,7 @@ const AuxiliaryComponent = () => {
       ) : (
         <NotloginComponent />
       )}
-      <Button style={{ marginTop: 20 }} type="default" icon={<GithubOutlined />} size="large" block shape="round" href="https://github.com/meibin08/twitter-app">
+      <Button style={{ marginTop: 20 }} type="default" icon={<GithubOutlined />} size="large" block shape="round" href="https://github.com/meibin08/twitter-web">
         demo 源码入口
       </Button>
       {isLogin && (
